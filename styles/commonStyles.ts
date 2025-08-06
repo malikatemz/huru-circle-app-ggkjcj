@@ -2,20 +2,25 @@
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 export const colors = {
-  primary: '#3498db',      // Calming blue
-  secondary: '#2980b9',    // Darker blue
-  accent: '#e67e22',       // Vibrant orange
-  accentSecondary: '#1abc9c', // Teal
-  background: '#ffffff',    // White background
-  backgroundAlt: '#f8f9fa', // Light gray background
-  text: '#34495e',         // Dark gray text
-  textLight: '#7f8c8d',    // Light gray text
+  // Warm African colors - earthy tones, sunset oranges, leafy greens, soft golds
+  primary: '#D2691E',      // Sunset orange
+  secondary: '#8B4513',    // Saddle brown (earthy)
+  accent: '#DAA520',       // Goldenrod (soft gold)
+  accentSecondary: '#228B22', // Forest green (leafy)
+  tertiary: '#CD853F',     // Peru (warm earth)
+  background: '#FFF8DC',   // Cornsilk (warm white)
+  backgroundAlt: '#F5DEB3', // Wheat (light earth)
+  text: '#2F4F4F',         // Dark slate gray
+  textLight: '#696969',    // Dim gray
   white: '#ffffff',
-  success: '#27ae60',
-  warning: '#f39c12',
-  error: '#e74c3c',
-  border: '#ecf0f1',
-  card: '#ffffff',
+  success: '#32CD32',      // Lime green
+  warning: '#FF8C00',      // Dark orange
+  error: '#DC143C',        // Crimson
+  border: '#DEB887',       // Burlywood
+  card: '#FFFAF0',         // Floral white
+  explorer: '#FF6347',     // Tomato (HURU Explorer)
+  builder: '#4682B4',      // Steel blue (HURU Builder)
+  leader: '#9932CC',       // Dark orchid (HURU Leader)
 };
 
 export const buttonStyles = StyleSheet.create({

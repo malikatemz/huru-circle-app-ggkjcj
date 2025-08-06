@@ -51,11 +51,38 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="mood"
+        name="events"
         options={{
-          title: 'Mood',
+          title: 'Events',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="heart" size={size} color={color} />
+            <Icon name="calendar" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="learning"
+        options={{
+          title: 'Learning',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="book" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="journal"
+        options={{
+          title: 'Journal',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="journal" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="progress"
+        options={{
+          title: 'Progress',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="trophy" size={size} color={color} />
           ),
         }}
       />

@@ -1,6 +1,39 @@
 
 import { User, Post, Challenge, MoodEntry, Notification } from '../types';
 
+// African proverbs for cultural identity
+export const africanProverbs = [
+  "If you want to go fast, go alone. If you want to go far, go together. - African Proverb",
+  "When the roots of a tree begin to decay, it spreads death to the branches. - African Proverb",
+  "A bird will always use another bird's feathers to feather its own nest. - African Proverb",
+  "The child who is not embraced by the village will burn it down to feel its warmth. - African Proverb",
+  "Smooth seas do not make skillful sailors. - African Proverb",
+  "However far the stream flows, it never forgets its source. - African Proverb",
+  "When spider webs unite, they can tie up a lion. - African Proverb",
+  "The best time to plant a tree was 20 years ago. The second best time is now. - African Proverb",
+];
+
+// Daily affirmations with African wisdom
+export const dailyAffirmations = [
+  "I am rooted in my heritage and growing towards my future.",
+  "Like the baobab tree, I stand strong and provide shelter for others.",
+  "I carry the wisdom of my ancestors and the hope of tomorrow.",
+  "My journey is unique, but I am never alone in my community.",
+  "I am a bridge between tradition and progress.",
+  "Every challenge is an opportunity to grow stronger, like the acacia in the savanna.",
+  "I honor my past, embrace my present, and create my future.",
+  "Ubuntu: I am because we are. My success lifts my community.",
+];
+
+// Bible verses for spiritual growth
+export const bibleVerses = [
+  "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, to give you hope and a future. - Jeremiah 29:11",
+  "Trust in the Lord with all your heart and lean not on your own understanding. - Proverbs 3:5",
+  "I can do all things through Christ who strengthens me. - Philippians 4:13",
+  "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
+  "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing. - Zephaniah 3:17",
+];
+
 export const mockUsers: User[] = [
   {
     id: '1',

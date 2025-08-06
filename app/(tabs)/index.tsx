@@ -6,7 +6,7 @@ import { colors, commonStyles } from '../../styles/commonStyles';
 import Header from '../../components/Header';
 import FeedCard from '../../components/FeedCard';
 import SafetyButton from '../../components/SafetyButton';
-import { mockPosts, mockUsers, dailyAffirmations } from '../../data/mockData';
+import { mockPosts, mockUsers, dailyAffirmations, africanProverbs, bibleVerses } from '../../data/mockData';
 import { useNotifications } from '../../hooks/useNotifications';
 
 export default function HomeScreen() {
@@ -18,10 +18,11 @@ export default function HomeScreen() {
   const currentUser = mockUsers[0]; // Simulate logged-in user
 
   useEffect(() => {
-    // Set daily affirmation
+    // Set daily inspiration (mix of affirmations, proverbs, and verses)
     const today = new Date().getDate();
-    const affirmationIndex = today % dailyAffirmations.length;
-    setDailyAffirmation(dailyAffirmations[affirmationIndex]);
+    const allInspiration = [...dailyAffirmations, ...africanProverbs, ...bibleVerses];
+    const inspirationIndex = today % allInspiration.length;
+    setDailyAffirmation(allInspiration[inspirationIndex]);
   }, []);
 
   const onRefresh = async () => {
@@ -57,9 +58,13 @@ export default function HomeScreen() {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       >
-        {/* Daily Affirmation Card */}
+        {/* Daily Inspiration Card */}
         <View style={styles.affirmationCard}>
-          <Text style={styles.affirmationTitle}>Today&apos;s Affirmation ✨</Text>
+          <Text style={styles.affirmationTitle}>
+            {dailyAffirmation.includes('African Proverb') ? '🌍 Wisdom from Our Ancestors' : 
+             dailyAffirmation.includes('-') && !dailyAffirmation.includes('African Proverb') ? '📖 Scripture for Today' : 
+             '✨ Daily Affirmation'}
+          </Text>
           <Text style={styles.affirmationText}>{dailyAffirmation}</Text>
         </View>
 
