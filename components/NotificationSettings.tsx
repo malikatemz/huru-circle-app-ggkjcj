@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, Switch, StyleSheet, ScrollView } from 'react-native';
 import { colors } from '../styles/commonStyles';
 import { UserPreferences } from '../types';
@@ -35,10 +35,13 @@ export default function NotificationSettings({
   const { storeData } = useStorage();
   const { scheduleDailyAffirmation, scheduleDailyVerse, scheduleReminder } = useNotifications();
 
+  // Memoize the callback to prevent unnecessary re-renders
+  const memoizedOnPreferencesChange = useCallback(onPreferencesChange, [onPreferencesChange]);
+
   useEffect(() => {
     // Save preferences whenever they change
     storeData(`preferences_${userId}`, preferences);
-    onPreferencesChange(preferences);
+    memoizedOnPreferencesChange(preferences);
 
     // Set up notifications based on preferences
     if (preferences.notifications.dailyAffirmations) {
@@ -51,7 +54,15 @@ export default function NotificationSettings({
       scheduleReminder('Reading Time', 'Take some time to read today', 16, 0);
       scheduleReminder('Walk Reminder', 'Time for your daily walk!', 17, 0);
     }
-  }, [preferences]);
+  }, [
+    preferences, 
+    userId, 
+    storeData, 
+    memoizedOnPreferencesChange, 
+    scheduleDailyAffirmation, 
+    scheduleDailyVerse, 
+    scheduleReminder
+  ]);
 
   const updateNotificationPreference = (key: keyof UserPreferences['notifications'], value: boolean) => {
     setPreferences(prev => ({

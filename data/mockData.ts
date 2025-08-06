@@ -23,6 +23,16 @@ export const dailyAffirmations = [
   "Every challenge is an opportunity to grow stronger, like the acacia in the savanna.",
   "I honor my past, embrace my present, and create my future.",
   "Ubuntu: I am because we are. My success lifts my community.",
+  'You are capable of amazing things.',
+  'Your potential is limitless.',
+  'Every challenge is an opportunity to grow.',
+  'You are loved and valued.',
+  'Your voice matters.',
+  'You have the strength to overcome any obstacle.',
+  'Today is full of possibilities.',
+  'You are exactly where you need to be.',
+  'Your dreams are valid and achievable.',
+  'You bring light to the world.',
 ];
 
 // Bible verses for spiritual growth
@@ -32,6 +42,10 @@ export const bibleVerses = [
   "I can do all things through Christ who strengthens me. - Philippians 4:13",
   "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
   "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing. - Zephaniah 3:17",
+  'I can do all things through Christ who strengthens me. - Philippians 4:13',
+  'Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9',
+  'Cast all your anxiety on him because he cares for you. - 1 Peter 5:7',
+  'The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing. - Zephaniah 3:17',
 ];
 
 export const mockUsers: User[] = [
@@ -181,25 +195,4 @@ export const mockMoodEntries: MoodEntry[] = [
     timestamp: new Date('2024-01-19T20:30:00'),
     triggers: ['exams', 'stress'],
   },
-];
-
-export const dailyAffirmations = [
-  'You are capable of amazing things.',
-  'Your potential is limitless.',
-  'Every challenge is an opportunity to grow.',
-  'You are loved and valued.',
-  'Your voice matters.',
-  'You have the strength to overcome any obstacle.',
-  'Today is full of possibilities.',
-  'You are exactly where you need to be.',
-  'Your dreams are valid and achievable.',
-  'You bring light to the world.',
-];
-
-export const bibleVerses = [
-  'For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, to give you hope and a future. - Jeremiah 29:11',
-  'I can do all things through Christ who strengthens me. - Philippians 4:13',
-  'Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9',
-  'Cast all your anxiety on him because he cares for you. - 1 Peter 5:7',
-  'The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing. - Zephaniah 3:17',
 ];
