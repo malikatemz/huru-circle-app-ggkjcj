@@ -6,11 +6,11 @@ HURU Circle App is a gamified community platform designed to engage and support 
 
 - **Gamification Dashboard:** Track progress, earn badges, and level up through positive participation and engagement.
 - **Rewards System:** Redeem points for rewards such as airtime, books, vouchers, and digital badges. Some rewards require admin approval.
-- **User Profiles:** Manage personal information, privacy settings, and notification preferences (e.g., daily affirmations, reminders, mentor contact).
+- **User  Profiles:** Manage personal information, privacy settings, and notification preferences (e.g., daily affirmations, reminders, mentor contact).
 - **Analytics:** Admins can view engagement metrics, user activity, and content moderation stats.
 - **Content Moderation:** Moderation queue and flagged content management for safe and positive interactions.
 - **Donations:** Users can make donations via MPesa or card, optionally anonymously.
-- **Privacy Controls:** Users control visibility of their real name and whether mentors can contact them.
+- **Privacy Controls:** Users control the visibility of their real name and whether mentors can contact them.
 - **PWA Support:** Service worker configuration for offline usage and faster load times.
 
 ## Getting Started
@@ -56,7 +56,3 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## License
 
 This project currently does not specify a license.
-
-## Contact
-
-For questions or support, reach out to [malikatemz](https://github.com/malikatemz).
